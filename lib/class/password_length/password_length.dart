@@ -5,7 +5,7 @@ class PasswordLength extends FilterObject{
   @override
   Notificacion validate(String value){
     if(value.length >= 8){
-      return Notificacion(descripcion: "ok", value: true);
+      return Notificacion(descripcion: "Correo registrado con éxito", value: true);
     }
     return Notificacion(
       descripcion: "La contraseña tiene que tener una longitud mínima de 8",

@@ -6,7 +6,7 @@ class EmailFilter extends FilterObject{
   Notificacion validate(String value) {
       RegExp emailValido = RegExp(r"^[^@]+@(gmail\.com|hotmail\.com)$");
       if(emailValido.hasMatch(value)){
-        return Notificacion(descripcion: "ok", value: true);
+        return Notificacion(descripcion: "Correo registrado con éxito", value: true);
       }
       return Notificacion(descripcion: "No es un email valido", value: false);
   }

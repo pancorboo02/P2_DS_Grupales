@@ -7,7 +7,7 @@ class PasswordSpecial extends FilterObject{
     RegExp specialChar = RegExp(r'[!@#\$%^&*(),.?":{}|<>]');
     if(specialChar.hasMatch(value)){
       return Notificacion(
-        descripcion: "ok", 
+        descripcion: "Correo registrado con éxito", 
         value: true);
     }
     return Notificacion(

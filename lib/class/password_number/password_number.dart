@@ -7,7 +7,7 @@ class PasswordNumber extends FilterObject{
     RegExp specialChar = RegExp(r'[0-9]');
     if(specialChar.hasMatch(value)){
       return Notificacion(
-        descripcion: "ok", 
+        descripcion: "Correo registrado con éxito", 
         value: true);
     }
     return Notificacion(

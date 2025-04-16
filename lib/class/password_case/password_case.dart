@@ -7,7 +7,7 @@ class PasswordCase extends FilterObject{
     bool hasLower = value.contains(RegExp(r"[a-z]"));
     bool hasUpper = value.contains(RegExp(r"[A-Z]"));
     if(hasLower && hasUpper){
-      return Notificacion(descripcion: "ok", value: true);
+      return Notificacion(descripcion: "Correo registrado con éxito", value: true);
     } 
     return Notificacion(
       descripcion: "La contraseña tiene que contener una letra mayuscula y otra minuscula",

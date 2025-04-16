@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         SizedBox(height: 20,), 
         Text(mensaje, style: TextStyle(
-          color: mensaje == "ok" ? Colors.green : Colors.red,
+          color: mensaje == "Correo registrado con éxito" ? Colors.green : Colors.red,
           fontWeight: FontWeight.bold,
         ),)
       ],

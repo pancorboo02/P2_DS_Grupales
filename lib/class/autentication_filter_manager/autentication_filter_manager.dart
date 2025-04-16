@@ -29,7 +29,7 @@ class AutenticationFilterManager {
       }
     }
 
-    return Notificacion(descripcion: "ok", value: true);
+    return Notificacion(descripcion: "Correo registrado con éxito", value: true);
   }
 
   void addEmail(String email) {
